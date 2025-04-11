@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .cat {
+        width: 200px;
+        border-radius: 100px;
+      }
+
+      .search-bar {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border-color: rgb(129, 127, 127);
+        border-width: 1px;
+        border-style: solid;
+      }
+
+      .google-search-bar {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        margin-top: 100px;
+        padding: 10px 30px 10px 14px;
+        width: 350px;
+        border-radius: 175px;
+        border-color: rgb(129, 127, 127);
+        border-width: 1px;
+        border-style: solid;
+        border: none;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(96, 96, 96);
+        margin-bottom: 0;
+      }
+
+      .emai-bar {
+        font-size: 17px;
+
+        padding: 10px 30px 10px 14px;
+        width: 350px;
+
+        border-color: rgb(129, 127, 127);
+        border-width: 1px;
+        border-style: solid;
+      }
+
+      .join {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 10px;
+        background-color: rgb(39, 106, 213);
+        color: white;
+        border: none;
+        padding: 10px 40px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: opacity 0.15s;
+      }
+
+      div {
+        margin-top: 20px;
+      }
+
+      .inner-cat {
+        width: 50px;
+        border-radius: 25px;
+        vertical-align: middle;
+      }
+
+      .tweet-bar {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        padding: 10px 30px 10px 14px;
+        width: 250px;
+        border: none;
+        border-radius: 175px;
+        border-color: rgb(129, 127, 127);
+        border-width: 1px;
+        vertical-align: middle;
+      }
+
+      .tweet-button {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(62, 129, 236);
+        color: white;
+        border: none;
+        padding: 7px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: opacity 0.15s;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="cute-cat.jpg" class="cat" />
+    <input type="text" placeholder="Search" class="search-bar" />
+    <input
+      type="text"
+      placeholder="Search Google or type a URL"
+      class="google-search-bar"
+    />
+
+    <p>Email</p>
+    <input type="email" class="emai-bar" />
+    <p>By clicking Agree & Join, you agree to the Privacy Policy</p>
+    <button class="join">Agree & Join</button>
+
+    <div>
+      <img src="cute-cat.jpg" class="inner-cat" />
+      <input type="text" placeholder="What's happening" class="tweet-bar" />
+      <button class="tweet-button">Tweet</button>
+    </div>
+  </body>
+</html>
