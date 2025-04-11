@@ -20,4 +20,18 @@ By_default It opens in the current page but if we set target to
 
 ```bash
 Extra_spaces in html are ignored.
+
+html_entity means special codes used to display reserved characters in HTML, like &lt; for < and &amp; for &.
+
+paragraphs_by_default come with padding at the top and bottom, giving space between blocks of text.
+
+text-element means an HTML element used to display text content, like <p>, <h1>, <span>, or <div>.
+
+button not centering because text-align: center only affects inline or inline-block elements.
+
+Fix 1: Make the button inline-block with display: inline-block.
+
+Fix 2: Or make it block-level and center using margin: 0 auto.
+
+Use one of these depending on your layout needs.
 ```
