@@ -9,7 +9,7 @@ display - It tells the browser how the element should behave in terms of layout 
 
 Common values for display:
 
-block - Element takes up full width, starts on a new line (e.g., <div>, <h1>, <p>)
+block - Element takes up full width of container, starts on a new line (e.g., <div>, <h1>, <p>)
 inline - Element takes up only as much width as it needs, stays on the same line (e.g., <span>, <a>)
 inline-block - Like inline, but allows setting width and height
 none - Hides the element completely (not rendered on the page)

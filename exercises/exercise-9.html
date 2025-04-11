@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        margin: 0;
+      }
+      .red {
+        padding: 20px 20px;
+        background-color: red;
+        display: inline-block;
+      }
+      .green {
+        padding: 20px 20px;
+        background-color: green;
+        display: inline-block;
+        border-radius: 20px;
+      }
+
+      .service {
+        margin-top: 25px;
+        width: 300px;
+        padding: 0px 50px 15px 15px;
+        border: 1px solid grey;
+        display: block;
+      }
+
+      .service p {
+        margin: 10px 0;
+      }
+
+      .install {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        width: 280px;
+        background-color: black;
+        color: white;
+        padding: 20px 20px;
+        display: block;
+      }
+
+      .easy-access {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        color: gray;
+      }
+
+      .inner-cat {
+        width: 50px;
+        border-radius: 25px;
+        vertical-align: middle;
+      }
+
+      .tweet-bar {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        padding: 10px 30px 10px 14px;
+        width: 250px;
+        border: none;
+        border-radius: 175px;
+        border-color: rgb(129, 127, 127);
+        border-width: 1px;
+        vertical-align: middle;
+        outline: none;
+      }
+
+      .tweet-button {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(62, 129, 236);
+        color: white;
+        border: none;
+        padding: 7px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: opacity 0.15s;
+        vertical-align: middle;
+      }
+
+      .div-shadow {
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        padding: 10px 10px;
+        border-radius: 10px;
+        display: inline-block;
+      }
+
+      .friend-suggestion {
+        margin-top: 25px;
+        width: 200px;
+        display: inline-block;
+        padding-bottom: 12px;
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 2px;
+        margin-right: 20px;
+      }
+
+      .cat-profile {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+      }
+
+      .friend-name {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        padding-left: 7px;
+        padding-top: 5px;
+      }
+
+      .mutual-friends {
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 8px;
+        font-size: 12px;
+        color: gray;
+        margin-bottom: 5px;
+      }
+
+      .add-friend {
+        background-color: rgb(62, 129, 236);
+        color: white;
+        border: none;
+        font-size: 10px;
+        padding: 7px 15px;
+        border-radius: 3px;
+        margin-left: 7px;
+        cursor: pointer;
+      }
+
+      .logo {
+        width: 200px;
+        margin: 0 auto;
+        display: block;
+      }
+
+      .search-bar {
+        margin: 0 auto;
+        display: block;
+        width: 400px;
+        padding: 10px 20px 10px 10px;
+        border-radius: 200px;
+        border-style: solid;
+        border: none;
+        box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .google-container {
+        margin-top: 100px;
+        text-align: center;
+      }
+
+      .google-button {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f0f0f0;
+        margin-top: 20px;
+        color: black;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: opacity 0.15s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="service">
+      <p>Satisfied with our service?</p>
+      <button>Yes</button>
+      <button>No</button>
+    </div>
+
+    <div class="install">
+      <p>Install YouTube Music</p>
+      <p class="easy-access">
+        Add YouTube Music to your desktop for quick and easy access
+      </p>
+    </div>
+
+    <div class="div-shadow">
+      <img src="cute-cat.jpg" class="inner-cat" />
+      <input type="text" placeholder="What's happening" class="tweet-bar" />
+      <button class="tweet-button">Tweet</button>
+    </div>
+
+    <div>
+      <div class="friend-suggestion">
+        <img src="cute-cat.jpg" class="cat-profile" />
+        <p class="friend-name">Oliver</p>
+        <p class="mutual-friends">2 mutual friends</p>
+        <button class="add-friend">Add friend</button>
+      </div>
+      <div class="friend-suggestion">
+        <img src="rex-cat.jpg" class="cat-profile" />
+        <p class="friend-name">Rex</p>
+        <p class="mutual-friends">4 mutual friends</p>
+        <button class="add-friend">Add friend</button>
+      </div>
+      <div class="friend-suggestion">
+        <img src="kitty-cat-kitten-pet-45201.jpeg" class="cat-profile" />
+        <p class="friend-name">Mimi</p>
+        <p class="mutual-friends">3 mutual friends</p>
+        <button class="add-friend">Add friend</button>
+      </div>
+    </div>
+
+    <div class="google-container">
+      <img
+        src="pngimg.com - google_PNG19644.png"
+        alt="google logo"
+        class="logo"
+      />
+
+      <input
+        type="text"
+        placeholder="Search Google or type a URL"
+        class="search-bar"
+      />
+      <button class="google-button">Google Search</button>
+      <button class="google-button">I'm Feeling Lucky</button>
+    </div>
+  </body>
+</html>
