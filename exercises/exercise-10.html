@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      p {
+        margin: 2px 0;
+        font-family: Roboto, Arial;
+        font-size: 12px;
+        color: grey;
+      }
+
+      body {
+        padding: 0;
+      }
+
+      .container {
+        padding: 10px 0px 10px 10px;
+      }
+
+      .left-column,
+      .right-column {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .follow-button {
+        background-color: rgb(97, 140, 233);
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      .right-column {
+        display: inline-block;
+        margin-left: 15px;
+      }
+
+      .friend-info,
+      .follow-button-container {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .friend-info {
+        margin-right: 10px;
+        width: 200px;
+      }
+
+      .main-contaner {
+        border: 1px solid lightgrey;
+        width: 400px;
+      }
+
+      .follow-button {
+        margin: 0;
+        vertical-align: top;
+      }
+
+      .inner-cat {
+        width: 50px;
+        border-radius: 25px;
+        vertical-align: middle;
+      }
+
+      .left-column,
+      .right-column {
+        display: inline-block;
+      }
+
+      .friend-name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: black;
+      }
+
+      .inner-cat,
+      .rex-cat {
+        width: 50px; /* Same width for all images */
+        height: 50px; /* Explicit height */
+        border-radius: 50%; /* Fully rounded corners (circle) */
+        vertical-align: middle;
+      }
+
+      .rex-cat {
+        object-fit: cover;
+        object-position: top left;
+      }
+
+      .cat-profile {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+      }
+
+      .mutual-friends {
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 4px;
+        font-size: 12px;
+        color: gray;
+        vertical-align: middle;
+        line-height: 18px; /* Match the height of the mini-profile */
+      }
+
+      .add-friend {
+        background-color: rgb(62, 129, 236);
+        color: white;
+        border: none;
+        font-size: 10px;
+        padding: 7px 15px;
+        border-radius: 3px;
+        margin-left: 7px;
+        cursor: pointer;
+      }
+
+      .friend-suggestion {
+        margin-top: 25px;
+        width: 200px;
+        display: inline-block;
+        padding-bottom: 12px;
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 2px;
+        margin-right: 20px;
+      }
+
+      .friend {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #000;
+        font-size: 14px;
+        font-weight: bold;
+        padding-left: 7px;
+        padding-top: 5px;
+      }
+
+      .profile,
+      .friends-amount {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .mini-profile {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+      .profile-and-amount {
+        padding-left: 9px;
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-contaner">
+      <div class="container">
+        <div class="left-column">
+          <img src="cute-cat.jpg" class="inner-cat" />
+        </div>
+        <div class="right-column">
+          <div class="friend-info">
+            <p class="friend-name">oliver</p>
+            <p>the cat</p>
+            <p>popular</p>
+          </div>
+          <div class="follow-button-container">
+            <button class="follow-button">Follow</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="left-column">
+          <img src="kitty-cat-kitten-pet-45201.jpeg" class="inner-cat" />
+        </div>
+        <div class="right-column">
+          <div class="friend-info">
+            <p class="friend-name">Mimi</p>
+            <p>Sleepy cat</p>
+            <p>popular</p>
+          </div>
+          <div class="follow-button-container">
+            <button class="follow-button">Follow</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="left-column">
+          <img src="rex-cat.jpg" class="rex-cat" />
+        </div>
+        <div class="right-column">
+          <div class="friend-info">
+            <p class="friend-name">Rex</p>
+            <p>Happy</p>
+            <p>popular</p>
+          </div>
+          <div class="follow-button-container">
+            <button class="follow-button">Follow</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="friend-suggestion">
+        <img src="cute-cat.jpg" class="cat-profile" />
+        <div .friend-container>
+          <p class="friend">Oliver</p>
+        </div>
+        <div class="profile-and-amount">
+          <div class="profile">
+            <img src="cute-cat.jpg" class="mini-profile" />
+          </div>
+          <div class="friends-amount">
+            <p class="mutual-friends">2 mutual friends</p>
+          </div>
+        </div>
+        <button class="add-friend">Add friend</button>
+      </div>
+      <div class="friend-suggestion">
+        <img src="rex-cat.jpg" class="cat-profile" />
+        <div .friend-container>
+          <p class="friend">Rex</p>
+        </div>
+        <div class="profile-and-amount">
+          <div class="profile">
+            <img src="rex-cat.jpg" class="mini-profile" />
+          </div>
+
+          <div class="friends-amount">
+            <p class="mutual-friends">4 mutual friends</p>
+          </div>
+        </div>
+        <button class="add-friend">Add friend</button>
+      </div>
+      <div class="friend-suggestion">
+        <img src="kitty-cat-kitten-pet-45201.jpeg" class="cat-profile" />
+        <div .friend-container>
+          <p class="friend">mimi</p>
+        </div>
+        <div class="profile-and-amount">
+          <div class="profile">
+            <img src="kitty-cat-kitten-pet-45201.jpeg" class="mini-profile" />
+          </div>
+
+          <div class="friends-amount">
+            <p class="mutual-friends">3 mutual friends</p>
+          </div>
+        </div>
+        <button class="add-friend">Add friend</button>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- background-color: rgb(192, 192, 192);
+background-color: #4CAF50; -->
