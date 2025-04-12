@@ -1,0 +1,135 @@
+p {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 300px;
+  border: 1px solid gray;
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cat-preview {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cat-container {
+  width: 50px;
+  height: 50px;
+}
+
+.cat {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.rex-cat-container {
+  width: 50px;
+  height: 50px;
+}
+.rex-cat {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top left;
+}
+
+.right-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* margin-left: px; */
+  padding: 0px 0px 0px 12px;
+}
+
+.right-container p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.follow-button {
+  background-color: rgb(97, 140, 233);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  transition: background-color 0.15s;
+}
+
+.follow-button:hover {
+  background-color: rgb(0, 92, 166);
+}
+
+/* Header */
+.header {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rebeccapurple;
+  padding: 5px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.home {
+  color: white;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid gray;
+  border-radius: 18px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+}
+
+.right-section {
+  padding-right: 20px;
+}
+.download-button {
+  /* background-color: rgb(97, 140, 233); */
+
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rebeccapurple;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  transition: background-color 0.15s;
+}
