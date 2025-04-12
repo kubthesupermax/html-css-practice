@@ -2,6 +2,17 @@
   height: 55px;
   display: flex;
   justify-content: space-between;
+  background-color: white;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(228, 228, 228);
 }
 
 .left-section {
@@ -93,7 +104,20 @@
 .notifications-icon {
   height: 24px;
 }
-
+.notifications-icon-container {
+  position: relative;
+}
+.notifications-count {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: rgb(200, 0, 0);
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
 .current-user-picture {
   height: 32px;
   border-radius: 16px;
