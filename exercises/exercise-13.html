@@ -222,8 +222,8 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    gap: 17px;
-    border: 1px solid gray;
+    gap: 10px;
+    border: 1px solid lightgray;
     border-radius: 7px;
   }
 
@@ -267,12 +267,46 @@
     font-weight: 400;
     margin: 0px;
   }
+
+  .bottom-container {
+    display: flex;
+    padding-left: 62px;
+  }
+
+  .bottom-left-container {
+    flex: 1;
+    background-color: lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .bottom-right-container {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
+  }
+
+  .bottom-right-container .youtube-url {
+    font-size: 10px;
+    margin: 0px;
+    color: gray;
+  }
+
+  .bottom-right-container .video-title {
+    font-size: 10px;
+    font-weight: 500;
+    margin: 0px;
+  }
 </style>
 
 <div class="container4">
   <div class="top-container">
     <div class="top-left-container">
-      <img src="kitty-cat-kitten-pet-45201.jpeg" class="mimi-cat" />
+      <img src="cute-cat.jpg" class="oliver-cat" />
     </div>
     <div class="top-right-container">
       <div class="top-right-container-names">
@@ -285,5 +319,13 @@
       </p>
     </div>
   </div>
-  <div class="bottom-container"></div>
+  <div class="bottom-container">
+    <div class="bottom-left-container"></div>
+    <div class="bottom-right-container">
+      <p class="youtube-url">youtube.com</p>
+      <p class="video-title">
+        Backend web development - a complete overview (2021)
+      </p>
+    </div>
+  </div>
 </div>
