@@ -1,0 +1,131 @@
+<style>
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  .container {
+    position: relative;
+    height: 1000px;
+  }
+  .extreme-left-section {
+    height: 100%;
+    width: 100px;
+    background-color: rgb(41, 39, 39);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  .cat1-container {
+    width: 50px;
+  }
+  .cat1 {
+    width: 100%;
+    border-radius: 25px;
+  }
+  .cat2-container {
+    width: 50px;
+  }
+  .cat2 {
+    width: 100%;
+    border-radius: 25px;
+  }
+  .cat3-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden; /* this is important to clip the image */
+    display: inline-block;
+  }
+
+  .cat3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .info-section {
+    height: 100%;
+    width: 240px;
+    background-color: rgb(57, 56, 56);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 100px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  .info-top {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 90px;
+    margin-top: 3px;
+    align-items: center;
+  }
+
+  .info {
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(220, 220, 220);
+  }
+
+  .info-plus {
+    font-weight: bold;
+    font-size: 20px;
+    color: #a3a3a3;
+    cursor: pointer;
+  }
+  .info-tags {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    padding-left: 50px;
+    color: #a3a3a3;
+  }
+</style>
+<!-- color: #808080; -->
+<div class="container">
+  <div class="extreme-left-section">
+    <div class="cat1-container">
+      <img src="cute-cat.jpg" class="cat1" />
+    </div>
+    <div class="cat2-container">
+      <img src="kitty-cat-kitten-pet-45201.jpeg" class="cat2" />
+    </div>
+    <div class="cat3-container">
+      <img src="rex-cat.jpg" class="cat3" />
+    </div>
+  </div>
+
+  <div class="info-section">
+    <div class="info-top">
+      <div>
+        <p class="info">INFO</p>
+      </div>
+
+      <p class="info-plus">+</p>
+    </div>
+
+    <div class="info-tags">
+      <p># new-videos</p>
+      <p># updates</p>
+      <p># faq</p>
+    </div>
+  </div>
+</div>
