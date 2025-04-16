@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 3000px;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .first-x {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        color: white;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+      }
+
+      .bottom-right-box {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 320px;
+        height: 180px;
+        background-color: rgb(153, 147, 147);
+        color: white;
+        margin: 20px 20px 20px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .timestamp {
+        background-color: black;
+        padding: 5px;
+
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+      }
+
+      .shirt-container {
+        position: relative;
+        width: 300px;
+        background-color: white;
+        border: 2px solid black;
+        color: white;
+
+        display: inline-block;
+      }
+
+      .shirt-image {
+        position: relative;
+        width: 300px;
+
+        color: white;
+
+        border: 1px solid black;
+      }
+
+      .shirt-tag {
+        position: absolute;
+        top: 7px;
+        right: -1px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        padding: 5px;
+      }
+
+      .shirt {
+        position: absolute;
+
+        width: 100%;
+        background-color: rgb(153, 147, 147);
+        color: white;
+
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bottom-right-box">
+      <div class="first-x">X</div>
+      <div class="timestamp">0:29</div>
+    </div>
+
+    <div class="shirt-container">
+      <div class="shirt-image">
+        <img src="Hang_T-Shirt_Shoking_Blue.webp" class="shirt" />
+        <div class="shirt-tag">20% OFF</div>
+      </div>
+    </div>
+  </body>
+</html>
